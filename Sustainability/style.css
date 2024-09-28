@@ -1,9 +1,14 @@
 body {
-    background-color: lightblue;
-    font-family: Arial, sans-serif;
-    color: black;
-    margin: 0;
-    padding: 0;
+        background: url("img2.jpg");
+        background-size: cover;
+    background-position: center;
+    position: absolute; /* Or relative */
+    top: 0;
+    left: 0;
+     width: 100%;
+    height: 100%;
+    z-index: -1; /* Lower z-index */
+    
 }
 
 .container {
@@ -12,7 +17,10 @@ body {
 }
 
 .heading {
-    color: darkgreen;
+    font-family: sans-serif;
+    font-size: 100px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
@@ -22,10 +30,19 @@ body {
 button {
     padding: 10px 20px;
     margin: 0 10px;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
     cursor: pointer;
+
+
 }
 
 .content {
+    font-size: larger;
+    font-family: Arial;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -40,5 +57,42 @@ ul, ol {
     text-align: left;
     margin: 0 auto;
 }
+.quiz {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  ol {
+    list-style: none;
+    counter-reset: question;
+  }
+  
+  li {
+    margin-bottom: 15px;
+  }
+  
+  li::before {
+    content: counter(question) ". ";
+    counter-increment: question;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  #submit-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #results {
+    display: none;
+  }
 
    

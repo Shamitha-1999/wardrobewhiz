@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sustainability</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sustainability</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="heading">Sustainability</h1>
-        <div class="nav">
-            <button id="facts-btn">Facts</button>
-            <button id="quiz-btn">Quiz</button>
-        </div>
-        <div class="content" id="content">
-            <div id="sustainability-points">
-                <h2>10 Points on Sustainability</h2>
-                <ul>
-                    <li>Reduce, Reuse, Recycle</li>
-                    <li>Conserve Water</li>
-                    <li>Use Energy Efficiently</li>
-                    <li>Support Renewable Energy</li>
-                    <li>Choose Sustainable Products</li>
-                    <li>Eat Less Meat</li>
-                    <li>Use Public Transport</li>
-                    <li>Plant Trees</li>
-                    <li>Support Local Businesses</li>
-                    <li>Educate Others About Sustainability</li>
-                </ul>
-            </div>
-            <div id="facts" class="hidden">
-                <h2>5 Important Facts</h2>
-                <ul>
-                    <li>Fact 1: Over 1 million species are at risk of extinction due to climate change.</li>
-                    <li>Fact 2: The fashion industry is responsible for 10% of global carbon emissions.</li>
-                    <li>Fact 3: 90% of the world's plastic waste is not recycled.</li>
-                    <li>Fact 4: Sustainable agriculture can reduce soil erosion and improve soil health.</li>
-                    <li>Fact 5: Switching to renewable energy could reduce global CO2 emissions by up to 70%.</li>
-                </ul>
-            </div>
-            <div id="quiz" class="hidden">
-                <h2>5 Quiz Questions</h2>
-                <ol>
-                    <li>What is the most effective way to reduce waste?
-                        <ul>
-                            <li>A) Throw everything away</li>
-                            <li>B) Recycle</li>
-                            <li>C) Reduce consumption</li>
-                            <li>D) Burn it</li>
-                        </ul>
-                    </li>
-                    <li>Which energy source is renewable?
-                        <ul>
-                            <li>A) Coal</li>
-                            <li>B) Solar</li>
-                            <li>C) Natural Gas</li>
-                            <li>D) Nuclear</li>
-                        </ul>
-                    </li>
-                    <li>How much water can be saved by fixing a leaky faucet?
-                        <ul>
-                            <li>A) 100 gallons a year</li>
-                            <li>B) 500 gallons a year</li>
-                            <li>C) 1,000 gallons a year</li>
-                            <li>D) 10,000 gallons a year</li>
-                        </ul>
-                    </li>
-                    <li>What is the main cause of climate change?
-                        <ul>
-                            <li>A) Natural cycles</li>
-                            <li>B) Deforestation</li>
-                            <li>C) Greenhouse gas emissions</li>
-                            <li>D) Solar activity</li>
-                        </ul>
-                    </li>
-                    <li>Which of the following is a sustainable practice?
-                        <ul>
-                            <li>A) Using plastic bags</li>
-                            <li>B) Composting</li>
-                            <li>C) Wasting food</li>
-                            <li>D) Driving alone</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </div>
+  <div class="container">
+    <h1 class="heading">SUSTAINABILITY</h1>
+    <div class="nav">
+      <button id="facts-btn">Facts</button>
+      <button id="quiz-btn">Quiz</button>
     </div>
-    <script src="script.js"></script>
+    <div class="content" id="content">
+      <div id="sustainability-points">
+        <h1>10 Points on Sustainability</h1>
+        <ul>
+          <p>1. Reduce, Reuse, Recycle </p>
+          <p>2. Conserve Water </p>
+          <p>3. Use Energy Efficiently</p>
+          <p>4. Support Renewable Energy</p>
+          <p>5. Choose Sustainable Products</p>
+          <p>6. Eat Less Meat</p>
+          <p>7. Use Public Transport</p>
+          <p>8. Plant Trees</p>
+          <p>9. Support Local Businesses</p>
+         <p>10. Educate Others About Sustainability</p>
+        </ul>
+        <button onclick="history.back()">Back</button>
+      </div>
+      <div id="facts" class="hidden">
+        <h1>5 Important Facts</h1>
+        <ul>
+          <p>Fact 1: Over 1 million species are at risk of extinction due to climate change.</p>
+          <p>Fact 2: The fashion industry is responsible for 10% of global carbon emissions.</p>
+          <p>Fact 3: 90% of the world's plastic waste is not recycled.</p>
+          <p>Fact 4: Sustainable agriculture can reduce soil erosion and improve soil health.</p>
+          <p>Fact 5: Switching to renewable energy could reduce global CO2 emissions by up to 70%.</p>
+        </ul>
+        <button onclick="showSection('sustainability-points')">Back</button>
+      </div>
+      <div id="quiz" class="hidden">
+        <h1>5 Quiz Questions</h1>
+        <ol>
+          <li>What is the most effective way to reduce waste?</p>
+            <ul>
+              <p><input type="radio" name="q1" value="A"> Throw everything away</p>
+              <p><input type="radio" name="q1" value="B"> Recycle</p>
+              <p><input type="radio" name="q1" value="C"> Reduce consumption</p>
+              <p><input type="radio" name="q1" value="D"> Burn it</p>
+            </ul>
+          </li>
+          <li>Which energy source is renewable?
+            <ul>
+              <p><input type="radio" name="q2" value="A"> Coal</p>
+              <p><input type="radio" name="q2" value="B"> Solar</p>
+              <p><input type="radio" name="q2" value="C"> Natural Gas</p>
+              <p><input type="radio" name="q2" value="D"> Nuclear</p>
+            </ul>
+        </li>
+          <li>How much water can be saved by fixing a leaky faucet?
+            <ul>
+              <p><input type="radio" name="q3" value="A"> 100 gallons a year</p>
+              <p><input type="radio" name="q3" value="B"> 500 gallons a year</p>
+              <p><input type="radio" name="q3" value="C"> 1,000 gallons a year</p>
+              <p><input type="radio" name="q3" value="D"> 10,000 gallons a year</p>
+            </ul>
+          </li>
+          <li>What is the main cause of climate change?
+            <ul>
+              <p><input type="radio" name="q4" value="A"> Natural cycles</p>
+              <p><input type="radio" name="q4" value="B"> Deforestation</p>
+              <p><input type="radio" name="q4" value="C"> Greenhouse gas emissions</p>
+              <p><input type="radio" name="q4" value="D"> Solar activity</p>
+            </ul>
+          </li>
+          <li>Which of the following is a sustainable practice?
+            <ul>
+              <p><input type="radio" name="q5" value="A"> Using plastic bags</p>
+              <p><input type="radio" name="q5" value="B"> Composting</p>
+              <p><input type="radio" name="q5" value="C"> Wasting food</p>
+              <p><input type="radio" name="q5" value="D"> Driving alone</p>
+            </ul>
+          </li>
+        </ol>
+        <button id="submit-btn">Submit Quiz</button>
+        <div id="results" class="hidden">
+          <h2>Quiz Results</h2>
+          <p>Your score is: <span id="score"></span></p>
+        </div>
+        <button onclick="showSection('sustainability-points')">Back</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
