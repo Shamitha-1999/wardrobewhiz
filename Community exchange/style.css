@@ -1,3 +1,10 @@
+body{
+    background: url("img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
 .community-exchange {
     margin: 30px;
     padding: 20px;
@@ -21,7 +28,7 @@ form textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #4caf55;
     color: white;
     border: none;
     border-radius: 5px;
@@ -30,6 +37,18 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF49;
 }
 
 #exchangeList {
