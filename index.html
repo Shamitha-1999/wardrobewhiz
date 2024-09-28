@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>WardrobeWhiz | Login & Registration </title>
+    <title>WARDROBEWHIZ | Login & Registration</title>
 </head>
 <body>
-    <div class="wrapper">
+ <div class="wrapper">
     <nav class="nav">
         <div class="nav-logo">
-            <!------<img src="logo.jpg" alt="Your Logo">--------->
+            <h1>WARDROBEWHIZ</h1>
+            <h3 class="typing-text">"Edit Your Wardrobe, Curate Your Style"</h3>
         </div>
-        
-        <div class="nav-menu">
+        <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link">Tracker</a></li>
-                <li><a href="#" class="link">Chat Bot</a></li>
-                <li><a href="#" class="link">Style Me</a></li>
-                <li><a href="#" class="link">Community Exchange</a></li>
+                <li><a class="link active">Home</a></li>
+                <li><a href="Tracker/tracker.html" class="link">Tracker</a></li>
+                <li><a href="Sustainability/sustainability.html" class="link">Sustainability</a></li>
+                <li><a href="Community exchange/index.html" class="link">Community Exchange</a></li>
             </ul>
         </div>
         <div class="nav-button">
@@ -32,10 +31,12 @@
             <i class="bx bx-menu" onclick="myMenuFunction()"></i>
         </div>
     </nav>
-    <!----------------------------- Form box ----------------------------------->    
+
+<!----------------------------- Form box ----------------------------------->    
     <div class="form-box">
         
         <!------------------- login form -------------------------->
+
         <div class="login-container" id="login">
             <div class="top">
                 <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
@@ -62,6 +63,7 @@
                 </div>
             </div>
         </div>
+
         <!------------------- registration form -------------------------->
         <div class="register-container" id="register">
             <div class="top">
@@ -101,10 +103,13 @@
         </div>
     </div>
 </div>   
+
+
 <script>
    
    function myMenuFunction() {
     var i = document.getElementById("navMenu");
+
     if(i.className === "nav-menu") {
         i.className += " responsive";
     } else {
@@ -113,11 +118,14 @@
    }
  
 </script>
+
 <script>
+
     var a = document.getElementById("loginBtn");
     var b = document.getElementById("registerBtn");
     var x = document.getElementById("login");
     var y = document.getElementById("register");
+
     function login() {
         x.style.left = "4px";
         y.style.right = "-520px";
@@ -126,6 +134,7 @@
         x.style.opacity = 1;
         y.style.opacity = 0;
     }
+
     function register() {
         x.style.left = "-510px";
         y.style.right = "5px";
@@ -134,7 +143,8 @@
         x.style.opacity = 0;
         y.style.opacity = 1;
     }
+
 </script>
-</div> 
+
 </body>
 </html>
